@@ -1,0 +1,13 @@
+{
+  "initial_altitude_km": 400.0,
+  "target_altitude_km": 1000.0,
+  "first_burn_m_s": 160.8258122054691,
+  "second_burn_m_s": 157.45069776770393,
+  "total_delta_v_m_s": 318.276509973173,
+  "coast_time_min": 49.38648493325815,
+  "simulated_apoapsis_altitude_km": 1000.0,
+  "target_error_m": 0.0,
+  "relative_energy_span": 2.271139729387218e-15,
+  "function_evaluations": 2288,
+  "terminated_by_event": false
+}
