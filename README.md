@@ -1,6 +1,6 @@
-# OrbitLab
+# OrbitFitting
 
-OrbitLab is a small astrodynamics toolkit that propagates spacecraft states,
+OrbitFitting is a small astrodynamics toolkit that propagates spacecraft states,
 composes force models, detects terminal events, and checks numerical accuracy
 against conserved quantities. The included demo designs and propagates a
 low-Earth-orbit Hohmann transfer.
@@ -10,8 +10,8 @@ low-Earth-orbit Hohmann transfer.
 From the portfolio root:
 
 ```bash
-PYTHONPATH=orbitlab python -m orbitlab.demo --output orbitlab/outputs
-python -m unittest discover -s orbitlab/tests -v
+PYTHONPATH=orbitfitting python -m orbitfitting.demo --output orbitfitting/outputs
+python -m unittest discover -s orbitfitting/tests -v
 ```
 
 The source uses kilometers, seconds, and kilograms, which is the common unit
