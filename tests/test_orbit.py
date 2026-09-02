@@ -8,14 +8,14 @@ import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from orbitlab.diagnostics import relative_span, specific_energy
-from orbitlab.forces import j2_gravity, point_mass_gravity
-from orbitlab.models import EARTH
-from orbitlab.propagate import propagate
-from orbitlab.transfers import hohmann_transfer
+from orbitfitting.diagnostics import relative_span, specific_energy
+from orbitfitting.forces import j2_gravity, point_mass_gravity
+from orbitfitting.models import EARTH
+from orbitfitting.propagate import propagate
+from orbitfitting.transfers import hohmann_transfer
 
 
-class OrbitLabTests(unittest.TestCase):
+class OrbitFittingTests(unittest.TestCase):
     def test_circular_orbit_conserves_energy(self) -> None:
         radius = EARTH.radius_km + 500.0
         speed = np.sqrt(EARTH.mu_km3_s2 / radius)
